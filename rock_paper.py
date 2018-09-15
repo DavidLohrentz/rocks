@@ -138,7 +138,7 @@ HPper = round(100 * HP_count / (HR_count + HP_count + HS_count), 1)
 print(f"\n            Computer:    Human:")
 print(f"Rock:       {CRper}%        {HRper}%")
 print(f"Paper:      {CPper}%        {HPper}%")
-print(f"Scissors:   {CSper}%        {HSper}")
+print(f"Scissors:   {CSper}%        {HSper}%")
 
 if HSper >= 50:
     print("You chose scissors way the fuck too often!")
@@ -150,4 +150,4 @@ elif HRper >= 50:
     print("You chose rock too fucking often!")
 
 else:
-    print("Nice distribution of choices.")
+    print("You didn't pick any one choice 50% or more often.")
