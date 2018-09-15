@@ -108,5 +108,5 @@ else:
 CRper = round(100 * CR_count / (CR_count + CP_count + CS_count), 1)
 CSper = round(100 * CS_count / (CR_count + CP_count + CS_count), 1)
 CPper = round(100 * CP_count / (CR_count + CP_count + CS_count), 1)
-print(f"Computer's 'random' choices:\nRock: {CRper}%")
+print(f"Computer's choices:\nRock: {CRper}%")
 print(f"Paper: {CPper}%\nScissors: {CSper}%")
