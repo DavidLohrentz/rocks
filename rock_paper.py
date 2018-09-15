@@ -139,3 +139,15 @@ print(f"\n            Computer:    Human:")
 print(f"Rock:       {CRper}%        {HRper}%")
 print(f"Paper:      {CPper}%        {HPper}%")
 print(f"Scissors:   {CSper}%        {HSper}")
+
+if HSper >= 50:
+    print("You chose scissors way the fuck too often!")
+
+elif HPper >= 50:
+    print("You chose paper too damn often!")
+
+elif HRper >= 50:
+    print("You chose rock too fucking often!")
+
+else:
+    print("Nice distribution of choices.")
