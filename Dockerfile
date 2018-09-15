@@ -18,5 +18,7 @@ ADD . /var/opt
 # Make port 80 available to the world outside this container
 EXPOSE 80
 
+VOLUME /var/opt
+
 # Run rock_paper.py when the container launches
 CMD ["python", "rock_paper.py"]
