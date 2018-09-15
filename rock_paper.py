@@ -5,6 +5,10 @@ CR_count = 0
 CP_count = 0
 CS_count = 0
 
+HR_count = 0
+HP_count = 0
+HS_count = 0
+
 human_win_comments = ["Blind squirrel found a nut",
                     "Computer lost to dumb human",
                     "Enjoy it while you can",
@@ -37,6 +41,18 @@ while player_wins < match_length and computer_wins < match_length:
 
     human = input("Make your selection: r/p/s or q (quit)\n> ").lower()
 
+    if human == "r":
+        HR_count += 1
+
+    elif human == "p":
+        HP_count += 1
+
+    elif human == "s":
+        HS_count += 1
+
+    else:
+        print("Tsk, Tsk, Tsk")
+
     if human == "r" or human == "rock":
         human = "rock"
 
@@ -46,7 +62,7 @@ while player_wins < match_length and computer_wins < match_length:
     elif human == "p" or human == "paper":
         human = "paper"
 
-    elif human == "q" or human == "Q" or human == "Q":
+    elif human == "q" or human == "Q" or human == "quit":
         break
 
     else:
@@ -108,5 +124,18 @@ else:
 CRper = round(100 * CR_count / (CR_count + CP_count + CS_count), 1)
 CSper = round(100 * CS_count / (CR_count + CP_count + CS_count), 1)
 CPper = round(100 * CP_count / (CR_count + CP_count + CS_count), 1)
-print(f"Computer's choices:\nRock: {CRper}%")
-print(f"Paper: {CPper}%\nScissors: {CSper}%")
+
+HRper = round(100 * HR_count / (HR_count + HP_count + HS_count), 1)
+HSper = round(100 * HS_count / (HR_count + HP_count + HS_count), 1)
+HPper = round(100 * HP_count / (HR_count + HP_count + HS_count), 1)
+
+#print(f"\nComputer:\nRock: {CRper}%")
+#print(f"Paper: {CPper}%\nScissors: {CSper}%\n-----------------\n")
+
+#print(f"Human:\nRock: {HRper}%")
+#print(f"Paper: {HPper}%\nScissors: {HSper}%")
+
+print(f"\n            Computer:    Human:")
+print(f"Rock:       {CRper}%        {HRper}%")
+print(f"Paper:      {CPper}%        {HPper}%")
+print(f"Scissors:   {CSper}%        {HSper}")
