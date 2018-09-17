@@ -150,4 +150,4 @@ elif HRper >= 50:
     print("You chose rock too fucking often!")
 
 else:
-    print("Nice distribution of choices.")
+    print("You didn't pick any one choice 50% or more often.")
