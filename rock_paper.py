@@ -14,7 +14,7 @@ human_win_comments = ["Blind squirrel found a nut",
                     "Enjoy it while you can",
                     "Dumb human got lucky",
                     ":)",
-                    "Fuck me . . . lost to humanoid?"]
+                    "Fuck me . . . lost to humanoid"]
 
 comp_win_comments = ["Wah, wah, wah",
                     "Computer beats the dipshit human.",
@@ -117,10 +117,10 @@ if human == "q" or human == "Q" or human == "Q":
     print("Human forfeits")
 
 elif player_wins > computer_wins:
-    print("Human wins the match.\n\n" * 100000)
+    print("Human wins the match.\n" * 10)
 
 else:
-    print("Computer wins the match.")
+    print("Computer wins the match.\n" *10)
 CRper = round(100 * CR_count / (CR_count + CP_count + CS_count), 1)
 CSper = round(100 * CS_count / (CR_count + CP_count + CS_count), 1)
 CPper = round(100 * CP_count / (CR_count + CP_count + CS_count), 1)
@@ -134,11 +134,11 @@ HPper = round(100 * HP_count / (HR_count + HP_count + HS_count), 1)
 
 #print(f"Human:\nRock: {HRper}%")
 #print(f"Paper: {HPper}%\nScissors: {HSper}%")
-
+print("\n            CHOICE FREQUENCIES")
 print(f"\n            Computer:    Human:")
 print(f"Rock:       {CRper}%        {HRper}%")
 print(f"Paper:      {CPper}%        {HPper}%")
-print(f"Scissors:   {CSper}%        {HSper}")
+print(f"Scissors:   {CSper}%        {HSper}%")
 
 if HSper >= 50:
     print("You chose scissors way the fuck too often!")
