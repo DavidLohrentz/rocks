@@ -138,16 +138,16 @@ print("\n            CHOICE FREQUENCIES")
 print(f"\n            Computer:    Human:")
 print(f"Rock:       {CRper}%        {HRper}%")
 print(f"Paper:      {CPper}%        {HPper}%")
-print(f"Scissors:   {CSper}%        {HSper}%")
+print(f"Scissors:   {CSper}%        {HSper}%\n")
 
-if HSper >= 50:
+if HSper > 50 and HPper < 50 and HRper < 50:
     print("You chose scissors way the fuck too often!")
 
-elif HPper >= 50:
+elif HPper > 50 and HSper < 50 and HRper < 50:
     print("You chose paper too damn often!")
 
-elif HRper >= 50:
+elif HRper > 50 and HSper < 50 and HPper < 50:
     print("You chose rock too fucking often!")
 
 else:
-    print("You didn't pick any one choice 50% or more often.")
+    print("Nice job with your selections.")
