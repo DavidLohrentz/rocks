@@ -1,8 +1,8 @@
 # Save this Dockerfile in folder with rock_paper.py
 # To create the image: docker build -t rocks .
 # To start the container: docker run --rm -ti \
--v /home/davidl/Documents/projects/rocks:/var/opt \
--p 4000:80 rocks
+# -v /home/david/Documents/projects/rocks:/var/opt \
+# -p 4000:80 rocks
 #    or use bash start_rock.sh script
 
 # Use an Alpine Python runtime
