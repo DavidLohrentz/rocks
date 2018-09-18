@@ -140,6 +140,22 @@ print(f"Rock:       {CRper}%        {HRper}%")
 print(f"Paper:      {CPper}%        {HPper}%")
 print(f"Scissors:   {CSper}%        {HSper}%\n")
 
+comprock = "R" * int(CRper)
+comppaper = "P" * int(CRper)
+compsci = "S" * int(CSper)
+print("Computer:")
+print(f"    Rock: {comprock}")
+print(f"   Paper: {comppaper}")
+print(f"Scissors: {compsci}\n")
+
+hrock = "R" * int(HRper)
+hpaper = "P" * int(HPper)
+hsci = "S" * int(HSper)
+print("Human:")
+print(f"    Rock: {hrock}")
+print(f"   Paper: {hpaper}")
+print(f"Scissors: {hsci}\n")
+
 if HSper > 50 and HPper < 50 and HRper < 50:
     print("You chose scissors way the fuck too often!")
 
