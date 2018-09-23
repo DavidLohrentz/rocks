@@ -23,7 +23,7 @@ comp_win_comments = ["Wah, wah, wah",
                     "Sausages, Sausages. Barely even human!",
                     ":("]
 
-match_length = input("How many games wins the match? \n> ")
+match_length = input("\nHow many games wins the match? \n> ")
 if match_length.isdigit():
     match_length = int(match_length)
 
@@ -140,17 +140,17 @@ print(f"Rock:       {CRper}%        {HRper}%")
 print(f"Paper:      {CPper}%        {HPper}%")
 print(f"Scissors:   {CSper}%        {HSper}%\n")
 
-comprock = "R" * int(CRper)
-comppaper = "P" * int(CRper)
-compsci = "S" * int(CSper)
+comprock = "R" * CR_count
+comppaper = "P" * CP_count
+compsci = "S" * CS_count
 print("Computer:")
 print(f"    Rock: {comprock}")
 print(f"   Paper: {comppaper}")
 print(f"Scissors: {compsci}\n")
 
-hrock = "R" * int(HRper)
-hpaper = "P" * int(HPper)
-hsci = "S" * int(HSper)
+hrock = "R" * HR_count
+hpaper = "P" * HP_count
+hsci = "S" * HS_count
 print("Human:")
 print(f"    Rock: {hrock}")
 print(f"   Paper: {hpaper}")
