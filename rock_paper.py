@@ -166,4 +166,4 @@ elif HRper > 50 and HSper < 50 and HPper < 50:
     print("You chose rock too fucking often!")
 
 else:
-    print("Nice job with your selections.")
+    print("No selections picked more than half the time.")
